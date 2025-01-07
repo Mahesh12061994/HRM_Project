@@ -19,7 +19,7 @@ public class Base_Class {
 	WebDriver driver;
 	private static final Logger logger=org.apache.log4j.LogManager.getLogger(Base_Class.class); 
 		
-<<<<<<< HEAD
+
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -29,13 +29,13 @@ public class Base_Class {
 		System.out.println(driver.getTitle());
 		System.out.println("Page title is "+driver.getTitle());
 		Thread.sleep(3000);
-=======
+
 	
 	@BeforeSuite
 	public  void setup() {
 		
 		logger.info("Exicuting setup");
->>>>>>> branch 'master' of https://github.com/Mahesh12061994/HRM_Project.git
+
 		
 	}
 	@Test
