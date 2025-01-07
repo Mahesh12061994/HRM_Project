@@ -2,15 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-01-07T01:27:19 EST" name="Default suite" finished-at="2025-01-07T01:27:26 EST" duration-ms="7013">
+=======
+  <suite started-at="2025-01-07T12:44:28 IST" name="Default suite" finished-at="2025-01-07T12:44:48 IST" duration-ms="19200">
+>>>>>>> branch 'master' of https://github.com/Mahesh12061994/HRM_Project.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-01-07T01:27:19 EST" name="Default test" finished-at="2025-01-07T01:27:26 EST" duration-ms="7013">
+=======
+    <test started-at="2025-01-07T12:44:28 IST" name="Default test" finished-at="2025-01-07T12:44:48 IST" duration-ms="19200">
+>>>>>>> branch 'master' of https://github.com/Mahesh12061994/HRM_Project.git
       <class name="com.orangehrm.base.Base_Class">
+<<<<<<< HEAD
         <test-method signature="browser_launch()[pri:0, instance:com.orangehrm.base.Base_Class@738dc9b]" started-at="2025-01-07T01:27:19 EST" name="browser_launch" finished-at="2025-01-07T01:27:26 EST" duration-ms="6930" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T12:44:28 IST" name="setup" finished-at="2025-01-07T12:44:28 IST" duration-ms="19" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Mahesh12061994/HRM_Project.git
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browser_launch -->
+        </test-method> <!-- setup -->
+        <test-method signature="Crossbrowser_testing()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T12:44:29 IST" name="Crossbrowser_testing" finished-at="2025-01-07T12:44:48 IST" duration-ms="19140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Crossbrowser_testing -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T12:44:48 IST" name="closebroswer" finished-at="2025-01-07T12:44:50 IST" duration-ms="1891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
       </class> <!-- com.orangehrm.base.Base_Class -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
