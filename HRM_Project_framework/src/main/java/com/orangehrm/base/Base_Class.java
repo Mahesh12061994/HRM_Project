@@ -16,7 +16,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Base_Class {
-		
 	WebDriver driver;
 	private static final Logger logger=org.apache.log4j.LogManager.getLogger(Base_Class.class); 
 		
