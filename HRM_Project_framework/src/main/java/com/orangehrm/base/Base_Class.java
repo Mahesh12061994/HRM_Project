@@ -22,6 +22,7 @@ public class Base_Class {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		System.out.println("broswer lanched");
 		System.out.println(driver.getTitle());
+		System.out.println("Page title is "+driver.getTitle());
 		Thread.sleep(3000);
 		
 	}

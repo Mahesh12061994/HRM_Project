@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-05T00:50:33 IST" name="Default suite" finished-at="2025-01-05T00:50:43 IST" duration-ms="9803">
+  <suite started-at="2025-01-07T01:27:19 EST" name="Default suite" finished-at="2025-01-07T01:27:26 EST" duration-ms="7013">
     <groups>
     </groups>
-    <test started-at="2025-01-05T00:50:33 IST" name="Default test" finished-at="2025-01-05T00:50:43 IST" duration-ms="9803">
+    <test started-at="2025-01-07T01:27:19 EST" name="Default test" finished-at="2025-01-07T01:27:26 EST" duration-ms="7013">
       <class name="com.orangehrm.base.Base_Class">
-        <test-method signature="browser_launch()[pri:0, instance:com.orangehrm.base.Base_Class@738dc9b]" started-at="2025-01-05T00:50:33 IST" name="browser_launch" finished-at="2025-01-05T00:50:43 IST" duration-ms="9722" status="PASS">
+        <test-method signature="browser_launch()[pri:0, instance:com.orangehrm.base.Base_Class@738dc9b]" started-at="2025-01-07T01:27:19 EST" name="browser_launch" finished-at="2025-01-07T01:27:26 EST" duration-ms="6930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launch -->
