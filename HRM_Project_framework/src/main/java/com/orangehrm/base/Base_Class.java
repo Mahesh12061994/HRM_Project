@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Base_Class {
-	//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   --Github_Token
+	
 	
 	WebDriver driver;
 	private static final Logger logger=org.apache.log4j.LogManager.getLogger(Base_Class.class); 
