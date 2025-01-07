@@ -19,18 +19,6 @@ public class Base_Class {
 	WebDriver driver;
 	private static final Logger logger=org.apache.log4j.LogManager.getLogger(Base_Class.class); 
 		
-
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		System.out.println("broswer lanched");
-		System.out.println(driver.getTitle());
-		System.out.println("Page title is "+driver.getTitle());
-		Thread.sleep(3000);
-
-	
 	@BeforeSuite
 	public  void setup() {
 		
