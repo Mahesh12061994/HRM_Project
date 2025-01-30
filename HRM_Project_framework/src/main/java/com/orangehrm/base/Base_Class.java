@@ -1,37 +1,41 @@
 package com.orangehrm.base;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.LogManager;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+import com.utilities.ExtentReporterUtil;
+
+import com.utilities.Log;
 
 public class Base_Class {
-	WebDriver driver;
-	private static final Logger logger=org.apache.log4j.LogManager.getLogger(Base_Class.class); 
-		
-	@BeforeSuite
-	public  void setup() {
-		
-		logger.info("Exicuting setup");
 
-		
-	}
-	@Test
-	public void Crossbrowser_testing() throws InterruptedException {
-String browser = System.getProperty("browser", "firefox"); // Use system property for cross-browser testing (default: chrome)
-        
+    // Correct Logger initialization using class name as a string
+    private static final Logger logger = LogManager.getLogger(Base_Class.class.getName());
+
+    WebDriver driver;
+
+    @BeforeSuite
+    public void setup() {
+        // Initialize Extent Report
+        ExtentReporterUtil.initializeExtentReport();
+        logger.info("Initializing Extent Report...");
+    }
+
+    @Test
+    public void Crossbrowser_testing() throws InterruptedException {
+        String browser = System.getProperty("browser", "chrome");
         logger.info("Starting browser launch process...");
-        
+
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
@@ -56,18 +60,16 @@ String browser = System.getProperty("browser", "firefox"); // Use system propert
 
         // Simulating waiting for page load
         Thread.sleep(3000);
-
         logger.info("Waiting 3 seconds before proceeding to the next steps.");
     }
-			
-	@AfterSuite
-	public  void closebroswer() {
-		driver.quit();
-		logger.info("browser closed");
 
-	}
-	
-	}
-	
-
-
+    @AfterSuite
+    public void closeBrowser() {
+        if (driver != null) {
+            driver.quit();
+            logger.info("Browser closed.");
+        }
+        // Flush the extent report
+        ExtentReporterUtil.flushReport();
+    }
+}

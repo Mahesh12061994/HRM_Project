@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-07T13:43:23 IST" name="Default suite" finished-at="2025-01-07T13:43:38 IST" duration-ms="14952">
+  <suite started-at="2025-01-28T23:05:02 IST" name="Default suite" finished-at="2025-01-28T23:05:02 IST" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2025-01-07T13:43:23 IST" name="Default test" finished-at="2025-01-07T13:43:38 IST" duration-ms="14952">
+    <test started-at="2025-01-28T23:05:02 IST" name="Default test" finished-at="2025-01-28T23:05:02 IST" duration-ms="48">
       <class name="com.orangehrm.base.Base_Class">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T13:43:23 IST" name="setup" finished-at="2025-01-07T13:43:23 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.base.Base_Class@e077866]" started-at="2025-01-28T23:05:02 IST" name="setup" finished-at="2025-01-28T23:05:02 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+ExtentHtmlReporter cannot be resolved to a type
+ExtentHtmlReporter cannot be resolved to a type
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+ExtentHtmlReporter cannot be resolved to a type
+ExtentHtmlReporter cannot be resolved to a type
+
+at com.utilities.ExtentReporterUtil.initializeExtentReport(ExtentReporterUtil.java:12)
+at com.orangehrm.base.Base_Class.setup(Base_Class.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Crossbrowser_testing()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T13:43:23 IST" name="Crossbrowser_testing" finished-at="2025-01-07T13:43:38 IST" duration-ms="14841" status="PASS">
+        <test-method signature="Crossbrowser_testing()[pri:0, instance:com.orangehrm.base.Base_Class@e077866]" started-at="2025-01-28T23:05:02 IST" name="Crossbrowser_testing" finished-at="2025-01-28T23:05:02 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+ExtentHtmlReporter cannot be resolved to a type
+ExtentHtmlReporter cannot be resolved to a type
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+ExtentHtmlReporter cannot be resolved to a type
+ExtentHtmlReporter cannot be resolved to a type
+
+at com.utilities.ExtentReporterUtil.initializeExtentReport(ExtentReporterUtil.java:12)
+at com.orangehrm.base.Base_Class.setup(Base_Class.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Crossbrowser_testing -->
-        <test-method is-config="true" signature="closebroswer()[pri:0, instance:com.orangehrm.base.Base_Class@59402b8f]" started-at="2025-01-07T13:43:38 IST" name="closebroswer" finished-at="2025-01-07T13:43:39 IST" duration-ms="1211" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.base.Base_Class@e077866]" started-at="2025-01-28T23:05:02 IST" name="closeBrowser" finished-at="2025-01-28T23:05:02 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebroswer -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.orangehrm.base.Base_Class -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
